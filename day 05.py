@@ -1,4 +1,7 @@
+# DAY 05 — PYTHON LOGIC PRACTICE
+
 # 1. Count different character types
+
 # Beginner
 # Take a string and count:
 # - Uppercase letters
