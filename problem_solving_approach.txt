@@ -1,0 +1,78 @@
+The 7-step problem-solving method
+1. 1. Understand the problem
+   
+   Read the question slowly. Ask yourself:
+   - What exactly is being asked?
+   - What do I receive as input?
+   - What should I produce as output?
+   - What conditions or restrictions exist?
+   Don't think about code yet.
+2. 2. Identify the inputs and outputs
+   
+   Write down a simple example.
+   
+   For example, suppose the problem asks you to find the second-largest distinct number.
+   
+   Input: [10, 40, 20, 50, 30]
+   
+   Output: 40
+   
+   Now you know what the program must accomplish.
+3. 3. Break the problem into smaller tasks
+   
+   Ask: What smaller operations would solve this?
+   
+   For the second-largest problem:
+   - Find the largest number.
+   - Keep track of the second-largest number.
+   - Handle duplicates.
+   - Check whether a second distinct number exists.
+   A big problem becomes several small problems.
+4. 4. Think manually before coding
+   
+   Take a small example and solve it with a pen and paper.
+   
+   For example:
+   Number	Largest	Second largest
+   10	10	—
+   40	40	10
+   20	40	20
+   50	50	40
+   30	50	40
+   
+   Ask yourself: What changes when I encounter each new number?
+   
+   This is where the actual algorithm comes from.
+5. 5. Convert your thinking into pseudocode
+   
+   Pseudocode is your algorithm written in simple language, not Python syntax.
+   Start with no largest or second largest.
+   
+   For every number:
+       If it is bigger than largest:
+           Move largest into second largest.
+           Make current number the largest.
+       Otherwise, if it is bigger than second largest:
+           Make it the second largest.
+   
+   
+   If you cannot explain the solution in simple language, you're probably not ready to code it.
+6. 6. Write the Python code
+   
+   Now choose the Python tools that match your algorithm:
+   - Conditions → if, elif, else
+   - Repetition → for, while
+   - Collections → lists, sets, dictionaries
+   - Reusable operations → functions
+   Don't force Python features into the solution. Choose them because they help implement your logic.
+7. 7. Test, debug and optimize
+   
+   Test more than the normal example.
+   
+   Ask:
+   - What if the input is empty?
+   - What if there is only one element?
+   - What if all numbers are equal?
+   - What if all numbers are negative?
+   - What if there are duplicates?
+   Once it works, ask whether you can make it faster or use less memory.
