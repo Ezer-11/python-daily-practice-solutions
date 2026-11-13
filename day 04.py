@@ -2,18 +2,17 @@
 #! DAY 04 — PYTHON LOGIC PRACTICE
 
 #? Q1. FACTORIAL OF A NUMBER
-# Take a non-negative integer n and calculate its factorial using a loop.
+#* Take a non-negative integer n and calculate its factorial using a loop.
 
-# Factorial means multiplying all positive integers from 1 to n.
-# By definition, 0! = 1.
+#* Factorial means multiplying all positive integers from 1 to n.
+#* By definition, 0! = 1.
 
-# Input:
-# 5
+#* Input:
+#* 5
 
-# Output:
-# 120
+#* Output:
+#* 120
 
-# Constraints: 0 <= n <= 20
 
 # a = int(input("enter your number : "))
 # product = 1
@@ -24,66 +23,54 @@
 
 
 
-# Q2. MULTIPLICATION TABLE
-# Difficulty: Beginner
+#? Q2. MULTIPLICATION TABLE
 
-# Take an integer and print its multiplication table from 1 to 10.
+#* Take an integer and print its multiplication table from 1 to 10.
 
-# Input:
-# 7
+# *Input:
+#* Output:
+#* 7 x 1 = 7
+#* 7 x 2 = 14
+#* 7 x 3 = 21...so on till 10
 
-# Output:
-# 7 x 1 = 7
-# 7 x 2 = 14
-# 7 x 3 = 21
-# ...
-# 7 x 10 = 70
-
-# Requirement:
-# Use a loop, not ten separate print statements.
 # n = int(input("enter your number"))
 
 # for i in range(1,11):
 
 #    print(f"{n} x {i} = {n*i}" )
    
-# Q3. ROTATE A LIST TO THE RIGHT BY ONE POSITION
-# Difficulty: Beginner–Intermediate
+#?Q3. ROTATE A LIST TO THE RIGHT BY ONE POSITION
 
-# Take a list of integers and move its last element to the first position.
-# Every other element should shift one position to the right.
+#* Take a list of integers and move its last element to the first position.
+# *Every other element should shift one position to the right.
 
-# Input:
-# 5
-# 10 20 30 40 50
+#* Input:
+#* 5
+#* 10 20 30 40 50
 
-# Output:
-# 50 10 20 30 40
+#* Output:
+#* 50 10 20 30 40
+# ! note you need to hardcode first the list  and 
+# !then move the last element to first and further solve question
 
-# Constraints: 1 <= n <= 1000
+# a = [12, 34, 45, 80, 60, 78]
 
-# Requirement:
-# Try solving this using list indexing and loops.
+   # result = []
 
-a = [12 , 34 ,45 ,80 , 60 ,78]
-r = a[int(input("enter the index you want in first of the list :  "))]
-result = []
-for i in range(0,len(a)):
-        if a[i] == r:
-           result.insert(0,a[i])
-           
-        else:
-           result = list(a[i])
-print(result)
-          
-          
+# # * Add the last element first
+# result.append(a[-1])
+
+# # * Append every element except the last one
+# for i in range(len(a)-1):
+#     result.append(a[i])
+
+# print(result)
           
 
 
 
 
-# Q4. FIND THE FREQUENCY OF EVERY ELEMENT
-# Difficulty: Medium
+# ?Q4. FIND THE FREQUENCY OF EVERY ELEMENT
 
 # Take a list of integers and count how many times each distinct number occurs.
 
